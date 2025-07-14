@@ -1,9 +1,3 @@
-"""
-Precio unitario del producto: 8,00
-Cantidad comprada: 2
-Dinero recibido: 20,00
-CAMBIO= 4.00
-"""
 def ingresar_numero(mensaje):
     while True:
         try:
