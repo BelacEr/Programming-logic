@@ -16,4 +16,3 @@ name_2 = input('Nombre: ')
 ages.append(ingresar_edad('Edad (años): '))
 
 print(f"La edad media de {name} y {name_2} es de {str((ages[0] + ages[1]) / len(ages))} años.")
-
