@@ -1,20 +1,19 @@
-data = []
+def ingresar_edad(ages):
+    while True:
+        try:
+            return int(input(ages))
+        except ValueError:
+            print("Entrada fallida. Por favor, asegúrate de solo ingresar números.")
+
+
+ages = []
 print('Datos de la primera persona: ')
 name = input('Nombre: ')
-while True:
-    try:   
-        data.append(int(input('Edad (años): ')))
-        break
-    except ValueError:
-        print('Entrada fallida. Por favor, asegurate de solo ingresar números.')
+ages.append(ingresar_edad('Edad (años): '))
+
 print('Datos de la segunda persona: ')
 name_2 = input('Nombre: ')
-while True:
-    try:
-        data.append(int(input('Edad: ')))
-        break
-    except ValueError:
-        print('Entrada fallida. Por favor, asegurate de solo ingresar números.')
+ages.append(ingresar_edad('Edad (años): '))
 
-print('La edad media de ' + name + ' y ' + name_2 + ' es de ' + str(data[0] + data [1] / len(data)))
+print(f"La edad media de {name} y {name_2} es de {str((ages[0] + ages[1]) / len(ages))} años.")
 
