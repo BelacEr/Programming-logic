@@ -12,3 +12,4 @@ datos.append(ingresar_numeros('Salario por hora: '))
 datos.append(ingresar_numeros('Horas trabajadas: '))
 paga = datos[0] * datos[1]
 print(f"La paga de {nombre} debe ser de {paga:.2f}")
+    
