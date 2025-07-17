@@ -23,7 +23,7 @@ else:
         print(f"Raíces reales: x1 = {x1:.4f}, x2 = {x2:.4f}")
     elif discriminante == 0:
         x = -b / (2 * a)
-        print(f"RRaíz doble:: {x:.4f}")
+        print(f"Raíz doble:: {x:.4f}")
     else:
         print('La ecuación no tiene soluciones reales. En este caso, las soluciones son números complejos.')
 
