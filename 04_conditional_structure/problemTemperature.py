@@ -18,5 +18,5 @@ def temperatura():
     else:
         print('Asegúrate de escribir solo F o C en mayúsculas.')
         
-# Ejecutar el programa -w-
+# Ejecutar el programa -w-  
 temperatura()
