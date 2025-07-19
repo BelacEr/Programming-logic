@@ -21,8 +21,8 @@ def main():
     
     dentro_rango, fuera_rango = clasificar_numeros(numeros)
     
-    print("\nNúmeros dentro del rango [10, 20]:", dentro_rango)
-    print("Números fuera del rango [10, 20]:", fuera_rango)
+    print("\nCantidad de números dentro del rango [10, 20]:", len(dentro_rango))
+    print("Cantidad de números fuera del rango [10, 20]:", len(fuera_rango))
 
 if __name__ == "__main__": # Ésto porque se ve cuqui
     main()
