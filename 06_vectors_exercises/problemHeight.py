@@ -27,7 +27,7 @@ def main():
     porcentaje = (len(menores) / N) * 100
 
     # Resultados
-    print(f"\nAltura media: {media_altura:.2f} m")  
+    print(f"\nAltura media: {media_altura:.2f} m")      
     print(f"Porcentaje de menores de 16 años: {porcentaje:.1f}%")
     if menores:
         print("Nombres de menores de 16:", ", ".join(menores))
