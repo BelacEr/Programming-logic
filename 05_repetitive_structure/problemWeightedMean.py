@@ -6,7 +6,7 @@ def ingresar_numero(mensaje, tipo='float'):
                 return int(entrada)
             return float(entrada)
         except ValueError:
-             print(f"Error: Ingresa un número {'entero' if tipo == 'int' else 'válido'}.")
+            print(f"Error: Ingresa un número {'entero' if tipo == 'int' else 'válido'}.")
 
 def media_ponderada(a, b, c):
     # Calcula la media ponderada de tres números con pesos 2, 3 y 5 respectivamente.
