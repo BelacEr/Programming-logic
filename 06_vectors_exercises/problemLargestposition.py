@@ -11,7 +11,6 @@ def ingresar_numero(mensaje, tipo='float'):
 def main():
     N = ingresar_numero('¿Cuántos números vas a introducir? ', tipo='int')
     vector = []
-    par = []
 
     for _ in range(N):
         vector.append(ingresar_numero('Introduzca un número: '))
