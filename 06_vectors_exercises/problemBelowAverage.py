@@ -13,7 +13,7 @@ def ingresar_numeros(mensaje, tipo='float'):
 def main():
     N = ingresar_numeros('¿Cuántos elementos tendrá el vector? ', tipo='int')
     vector = []
-
+    
     for _ in range(N):
         vector.append(ingresar_numeros('Introduzca un número: '))
     media_vector = sum(vector) / len(vector)
