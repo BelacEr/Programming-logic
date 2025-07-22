@@ -11,19 +11,23 @@ def ingresar_numero(mensaje, tipo='float'):
 def main():
     N = ingresar_numero('¿Cuántos alumnos ingresarán? ', tipo='int')
     vector_nombre = []
-    vector_notas = []
-    promedio = []
-    
+    promedios = []
 
     for i in range(N):
-        print(f'Introduzca el nombre, la primera y la segunda nota del {i + 1}° alumno.')
-        vector_nombre.append(input('Nombre: ')) 
-        vector_notas.append(ingresar_numero('Primera nota: '))
-        vector_notas.append(ingresar_numero('Segunda nota: '))
-        promedio.append((vector_notas[i + i] + vector_notas[i + i + 1]) / 2) # 0,1. 2,3. 4,5. 6,7
+        print(f'\nIntroduzca el nombre, la primera y la segunda nota del {i + 1}° alumno.')
+        nombre = input('Nombre: ')
+        nota1 = ingresar_numero('Primera nota: ')
+        nota2 = ingresar_numero('Segunda nota: ')
+        promedio = (nota1 + nota2) / 2
+
+        vector_nombre.append(nombre)
+        promedios.append(promedio)
         print('-' * 30)
 
-    
+    print('\nALUMNOS APROBADOS:')
+    for i in range(N):
+        if promedios[i] >= 6.0:
+            print(f'{vector_nombre[i]} con promedio {promedios[i]:.2f}')
 
 if __name__ == '__main__':
     main()
