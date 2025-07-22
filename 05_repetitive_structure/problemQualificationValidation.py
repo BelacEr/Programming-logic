@@ -17,6 +17,6 @@ def calificacion():
     num2 = ingresar_numeros('Introducir segunda nota: ')
 
     media = (num1 + num2) / 2
-    print(f"La media es: {media}")
+    print(f"La media es: {media:.2f}")
 
 calificacion()
